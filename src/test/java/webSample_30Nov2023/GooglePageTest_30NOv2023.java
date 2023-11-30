@@ -13,10 +13,10 @@ public class GooglePageTest_30NOv2023 {
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.get("https://google.com/");
-		//WebElement srcBox=driver.findElement(By.id("APjFqb"));
+		WebElement srcBox=driver.findElement(By.id("APjFqb"));
 		//WebElement srcBox=driver.findElement(By.name("q"));
 		//WebElement srcBox=driver.findElement(By.className("gLFyf"));
-		WebElement srcBox=driver.findElement(By.tagName("textarea"));
+		//WebElement srcBox=driver.findElement(By.tagName("textarea"));
 		srcBox.sendKeys("Java Tutorial");
 		srcBox.sendKeys(Keys.ENTER);
 	}
